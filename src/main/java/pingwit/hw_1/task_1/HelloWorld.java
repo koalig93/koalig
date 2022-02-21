@@ -1,4 +1,4 @@
-package hw1.task_1;
+package pingwit.hw_1.task_1;
 
 public class HelloWorld {
     public static void main(String[] args) {
