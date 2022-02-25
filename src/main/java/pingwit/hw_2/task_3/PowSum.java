@@ -3,7 +3,7 @@ package pingwit.hw_2.task_3;
 public class PowSum {
     public static void main(String[] args) {
         int sum = 0;
-        for (int i = 1; i <= 256; i <<= 1) {
+        for (int i = 1; i <= 256; i <<= 1) { // i <<= 1 не увлекайся '<<'
             sum += i;
         }
         System.out.println("result: " + sum);
