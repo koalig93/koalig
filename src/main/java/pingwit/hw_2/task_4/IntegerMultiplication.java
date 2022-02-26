@@ -8,7 +8,7 @@ public class IntegerMultiplication {
     }
 
     private static long multiply(long a, long b) {
-        boolean negative = (a < 0 && b > 0) || (a > 0 && b < 0);
+        boolean negative = (a < 0 && b > 0) || (a > 0 && b < 0); // negative - это утверждение, лучше isNegative
         long result = multiplyPositives(Math.abs(a), Math.abs(b));
         return negative ? -result : result;
     }
@@ -25,10 +25,12 @@ public class IntegerMultiplication {
     // the key algorithm for multiplication without '*' operation (O(n^2))
     // use ordering for better performance
     // a >= b >= 0
+    // у тебя простая задача решена очень сложным способом. Боже упаси если ее увидят другие. 
+    // Но работает очень быстро с большими числами и медленнее с небольшими
     private static long multiplyPositivesOrdered(long a, long b) {
         long result = 0;
         while (b > 0) {
-            if ((b & 1) == 1) {
+            if ((b & 1) == 1) { 
                 result += a;
             }
             a <<= 1;
