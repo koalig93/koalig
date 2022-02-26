@@ -1,6 +1,7 @@
 package pingwit.hw_2.task_9;
 
 public class Triangles {
+    // возможно не очень корректно написано условие задачи. На выходе должен был ромб получиться. Задание засчитаю как правильное
     public static void main(String[] args) {
         int height = 4;
         drawUpTriangle(height);
