@@ -2,10 +2,10 @@ package pingwit.hw_2.task_9;
 
 public class Triangles {
     // возможно не очень корректно написано условие задачи. На выходе должен был ромб получиться. Задание засчитаю как правильное
+    // лови ромб
     public static void main(String[] args) {
         int height = 4;
         drawUpTriangle(height);
-        System.out.println();
         drawDownTriangle(height);
     }
 
@@ -15,7 +15,7 @@ public class Triangles {
                  System.out.print(' ');
              }
              for (int j = 0; j <= i; ++j) {
-                 System.out.print('*');
+                 System.out.print("**");
              }
              System.out.println();
          }
@@ -27,7 +27,7 @@ public class Triangles {
                 System.out.print(' ');
             }
             for (int j = i; j < height; ++j) {
-                System.out.print('*');
+                System.out.print("**");
             }
             System.out.println();
         }
