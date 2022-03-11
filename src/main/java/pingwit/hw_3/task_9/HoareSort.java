@@ -3,7 +3,7 @@ package pingwit.hw_3.task_9;
 import java.util.Arrays;
 import pingwit.hw_3.TestSet;
 
-public class QuickSort {
+public class HoareSort {
     public static void main(String[] args) {
         for (int[] row : TestSet.getIntegerArrays()) {
             System.out.print(Arrays.toString(row) + " -> ");
