@@ -16,15 +16,19 @@ public class EvenElementsCopy {
             return null;
         }
 
-        int[] result = new int[numbers.length / 2]; // а почему ты решил что конечный массив будет х2 короче начального?
-        // потому что мы оставляем только четные элементы массива, а их в 2 раза меньше (заодно проверил, что работает на массивах длины 0, 1, 2, 3)
-        // возможно я неправаильно понимаю условие задачи, но для наглядности изменил вывод
-        
-        // четные элементы массива [33, 55, 77, 88] будут [88]. А ты взял четные индексы, это не то
+        int counter = 0;
+        for (int element : numbers) {
+            if (element % 2 == 0) {
+                counter++;
+            }
+        }
 
+        int[] result = new int[counter];
         int j = 0;
-        for (int i = 1; i < numbers.length; i += 2) {
-            result[j++] = numbers[i];
+        for (int element : numbers) {
+            if (element % 2 == 0) {
+                result[j++] = element;
+            }
         }
 
         return result;
