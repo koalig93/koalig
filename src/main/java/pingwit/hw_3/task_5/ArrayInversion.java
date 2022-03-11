@@ -24,7 +24,7 @@ public class ArrayInversion {
         int median = numbers.length / 2;
         for (int i = 0; i < median; ++i) {
             int j = numbers.length - 1 - i;
-            int temp = numbers[i];
+            int temp = numbers[i]; //есть еще вариант свапа без 3ей переменной, я даже удивлен что ты не использовал его, ты ж знатный псих )) 
             numbers[i] = numbers[j];
             numbers[j] = temp;
         }
