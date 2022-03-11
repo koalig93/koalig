@@ -1,5 +1,6 @@
 package pingwit.hw_3.task_8;
 
+//+
 public class ButterFly {
 
     public static void main(String[] args) {
