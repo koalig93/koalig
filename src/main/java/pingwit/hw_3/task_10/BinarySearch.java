@@ -20,17 +20,17 @@ public class BinarySearch {
     }
 
     private static int binarySearch(int[] array, int left, int right, int desired) {
-        if (right < left) {
-            return -1;
-        }
+        while (left <= right) {
+            int middle = (left + right) / 2;
 
-        int middle = (left + right) / 2;
-        if (desired < array[middle]) {
-            return binarySearch(array, left, middle - 1, desired);
+            if (desired < array[middle]) {
+                right = middle - 1;
+            } else if (desired > array[middle]) {
+                left = middle + 1;
+            } else {
+                return middle;
+            }
         }
-        if (desired > array[middle]) {
-            return binarySearch(array, middle + 1, right, desired);
-        }
-        return middle;
+        return -1;
     }
 }
