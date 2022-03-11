@@ -30,7 +30,7 @@ public class BubbleSort {
                     sorted = false;
                 }
 
-                // increase counter despite the result of comparison
+                // increase counter despite the result of comparison - не оставляй комментарии в коде
                 comparesNum++;
             }
 
