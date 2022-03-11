@@ -6,7 +6,7 @@ public class MultiplicationTable {
 
     public static void main(String[] args) {
 
-        if (TABLE_SIZE <= 0) {
+        if (TABLE_SIZE <= 0) { // зачем этот if, если сверху константа?)
             return;
         }
 
