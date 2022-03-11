@@ -8,6 +8,7 @@ import java.util.Scanner;
 
 public class MinMaxNumber {
 
+    // Для человека, который борется за алгоритмы у тебя задача решена двумя нерациональными способами, за 1 итерацию все же можно сделать, зачем так оверхедить?
     private static final int INPUT_LENGTH = 3;
 
     public static void main(String[] args) {
@@ -24,9 +25,9 @@ public class MinMaxNumber {
         System.out.println("Min number: " + getMin(numbers));
         System.out.println("Max number: " + getMax(numbers));
 
-        List<Integer> numbersList = Arrays.stream(numbers).boxed().collect(Collectors.toList());
+        List<Integer> numbersList = Arrays.stream(numbers).boxed().collect(Collectors.toList()); // .collect(Collectors.toList()) -> .toList()
         System.out.println();
-        System.out.println("Alternative");
+        System.out.println("Alternative"); // System.out.println("\nAlternative"); вместо лишнего System.out.println();
         System.out.println("Min number: " + Collections.min(numbersList));
         System.out.println("Max number: " + Collections.max(numbersList));
     }
