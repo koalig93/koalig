@@ -5,7 +5,7 @@ import pingwit.hw_3.TestSet;
 
 public class ZeroOddElements {
     public static void main(String[] args) {
-        for (int[] row : TestSet.INTEGER_ARRAYS) { // TestSet.INTEGER_ARRAYS класс с паблик константой - плохое решение, лучше использовать файл или enum
+        for (int[] row : TestSet.getIntegerArrays()) { // TestSet.INTEGER_ARRAYS класс с паблик константой - плохое решение, лучше использовать файл или enum
             replaceOddsByZero(row);
             System.out.println(Arrays.toString(row));
         }

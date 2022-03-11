@@ -4,10 +4,9 @@ import java.util.Arrays;
 import pingwit.hw_3.TestSet;
 
 public class EvenElementsCopy {
-
-// эта строка лишняя, ее лучше удалить
     public static void main(String[] args) {
-        for (int[] row : TestSet.INTEGER_ARRAYS) {
+        for (int[] row : TestSet.getIntegerArrays()) {
+            System.out.print(Arrays.toString(row) + " -> ");
             System.out.println(Arrays.toString(getEvenElements(row)));
         }
     }
@@ -18,6 +17,8 @@ public class EvenElementsCopy {
         }
 
         int[] result = new int[numbers.length / 2]; // а почему ты решил что конечный массив будет х2 короче начального?
+        // потому что мы оставляем только четные элементы массива, а их в 2 раза меньше (заодно проверил, что работает на массивах длины 0, 1, 2, 3)
+        // возможно я неправаильно понимаю условие задачи, но для наглядности изменил вывод
 
         int j = 0;
         for (int i = 1; i < numbers.length; i += 2) {

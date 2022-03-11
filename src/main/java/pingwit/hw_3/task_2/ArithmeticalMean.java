@@ -5,7 +5,7 @@ import pingwit.hw_3.TestSet;
 public class ArithmeticalMean {
 
     public static void main(String[] args) {
-        for (int[] numbersArray : TestSet.INTEGER_ARRAYS) { // // TestSet.INTEGER_ARRAYS класс с паблик константой - плохое решение, лучше использовать файл или enum
+        for (int[] numbersArray : TestSet.getIntegerArrays()) { // // TestSet.INTEGER_ARRAYS класс с паблик константой - плохое решение, лучше использовать файл или enum
             printArithmeticMean(numbersArray);
         }
     }
@@ -21,6 +21,7 @@ public class ArithmeticalMean {
             for (int number : numbers) {
                 mean += number;
             }
+            // в проверке numbers.length > 0 есть смысл, как раз для того, чтобы в следующей строчке избежать деление на 0
             mean /= numbers.length;
         }
 

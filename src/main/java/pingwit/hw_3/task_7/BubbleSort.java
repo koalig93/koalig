@@ -5,7 +5,7 @@ import pingwit.hw_3.TestSet;
 
 public class BubbleSort {
     public static void main(String[] args) {
-        for (int[] row : TestSet.INTEGER_ARRAYS) {
+        for (int[] row : TestSet.getIntegerArrays()) {
             System.out.print(Arrays.toString(row) + " -> ");
             int comparesNum = bubbleSort(row);
             System.out.println(Arrays.toString(row) + " : " + comparesNum);
@@ -30,7 +30,6 @@ public class BubbleSort {
                     sorted = false;
                 }
 
-                // increase counter despite the result of comparison - не оставляй комментарии в коде
                 comparesNum++;
             }
 

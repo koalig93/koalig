@@ -6,10 +6,6 @@ public class MultiplicationTable {
 
     public static void main(String[] args) {
 
-        if (TABLE_SIZE <= 0) { // зачем этот if, если сверху константа?)
-            return;
-        }
-
         int[][] table = new int[TABLE_SIZE][TABLE_SIZE];
 
         for (int j = 0; j < table[0].length; ++j) {
