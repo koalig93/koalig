@@ -1,5 +1,6 @@
 package pingwit.hw_3.task_10;
 
+//+
 public class BinarySearch {
     private static final int[] INPUT_ARRAY = {1, 4, 7, 8, 11, 23, 25, 33, 45, 88, 99};
     private static final int[][] NUMBERS_TO_SEARCH = {{0, -1}, {100, -1}, {34, -1}, {1, 0}, {11, 4}, {88, 9}, {99, 10}};
