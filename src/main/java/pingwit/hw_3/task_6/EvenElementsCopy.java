@@ -3,6 +3,7 @@ package pingwit.hw_3.task_6;
 import java.util.Arrays;
 import pingwit.hw_3.TestSet;
 
+//+
 public class EvenElementsCopy {
     public static void main(String[] args) {
         for (int[] row : TestSet.getIntegerArrays()) {
@@ -11,7 +12,7 @@ public class EvenElementsCopy {
         }
     }
 
-    private static int[] getEvenElements(int[] numbers) { // задача пока решена неверно
+    private static int[] getEvenElements(int[] numbers) {
         if (numbers == null) {
             return null;
         }
