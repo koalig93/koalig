@@ -2,6 +2,7 @@ package pingwit.hw_4.task_1;
 
 import java.util.Objects;
 
+// +
 public class Person {
 
     private static String text = "Hello from static";
