@@ -7,15 +7,17 @@ import pingwit.hw_4.task_1.Person;
 public class EqualPersonFinder {
     public static void main(String[] args) {
 
-        // некрасиво, каждого персонажа с новой строки, а то 2 на строке, потом 4, фу. Пример:
-        // Person[] persons = {
-        //          new Person("Alex", 18),
-        //          new Person("Alex", 28)
-        //          }
-        Person[] persons = {new Person("Alex", 18), new Person("Alex", 28),
-                new Person(), new Person("Alex", 18), new Person("Egorka", 28), new Person(),
-                new Person("Alex", 28), new Person("Semen", 2),
-                new Person("Egorka", 28), new Person("Egorka", 28)};
+        Person[] persons = {new Person("Alex", 18),
+                new Person("Alex", 28),
+                new Person(),
+                new Person("Alex", 18),
+                new Person("Egorka", 28),
+                new Person(),
+                new Person("Alex", 28),
+                new Person("Semen", 2),
+                new Person("Egorka", 28),
+                new Person("Egorka", 28)
+        };
 
         Map<Person, Integer> equalPersonCounter = countEqualPersons(persons);
 
@@ -31,6 +33,7 @@ public class EqualPersonFinder {
          Map<Person, Long> collect = Arrays.stream(persons)
             .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
         */
+        // Не фанат стримов, хоть и пользуюсь. В данном случае мне так красивше и читабельней
         Map<Person, Integer> result = new HashMap<>();
 
         for (Person person : persons) { // первый раз вижу такой выбор, обычно через if(result.contains) {...}
