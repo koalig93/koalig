@@ -4,12 +4,8 @@ public class CountryHouse extends House {
 
     private static final int RENT_COEFF = 25;
 
-    public CountryHouse(Integer numFloors) {
-        super(numFloors);
-    }
-
-    public CountryHouse(Integer numFloors, Integer numTennants) {
-        super(numFloors, numTennants);
+    public CountryHouse(Integer numFloors, Integer numTenants) {
+        super(numFloors, numTenants);
     }
 
     @Override

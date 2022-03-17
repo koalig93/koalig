@@ -2,8 +2,9 @@ package pingwit.hw_5.task_1;
 
 public class Laptop implements Computer {
 
-    private String id;
-    private String model;
+    private final String id;
+    private final String model;
+    private boolean on;
 
     public Laptop(String id, String model) {
         this.id = id;
@@ -12,17 +13,12 @@ public class Laptop implements Computer {
 
     @Override
     public void start() {
-        System.out.println("Start");
-    }
-
-    @Override
-    public void restart() {
-        System.out.println("Restart");
+        on = true;
     }
 
     @Override
     public void shutDown() {
-        System.out.println("Shut down");
+        on = false;
     }
 
     public String getId() {
@@ -31,6 +27,10 @@ public class Laptop implements Computer {
 
     public String getModel() {
         return model;
+    }
+
+    public boolean isOn() {
+        return on;
     }
 
     @Override

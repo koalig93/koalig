@@ -2,8 +2,8 @@ package pingwit.hw_5.task_3;
 
 public abstract class House {
 
-    private Integer numFloors;
-    private Integer numTenants;
+    private final Integer numFloors;
+    private final Integer numTenants;
     private Boolean isWarmingOn;
 
     public House(Integer numFloors, Integer numTenants) {
@@ -12,20 +12,8 @@ public abstract class House {
         this.isWarmingOn = false;
     }
 
-    public House(Integer numFloors) {
-        this(numFloors, 0);
-    }
-
     public void turnWarmingOn() {
         isWarmingOn = true;
-    }
-
-    public void turnWarmingOff() {
-        isWarmingOn = false;
-    }
-
-    public Boolean isWarmingOn() {
-        return isWarmingOn;
     }
 
     public Integer getNumFloors() {
@@ -34,10 +22,6 @@ public abstract class House {
 
     public Integer getNumTenants() {
         return numTenants;
-    }
-
-    public void setNumTenants(Integer numTenants) {
-        this.numTenants = numTenants;
     }
 
     abstract Integer getRentPayment();

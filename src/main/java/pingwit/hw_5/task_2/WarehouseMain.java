@@ -10,13 +10,18 @@ public class WarehouseMain {
     public static void main(String[] args) {
         Computer[] myComputers = {new Laptop(UUID.randomUUID().toString(), "MSI"),
                 new Laptop(UUID.randomUUID().toString(), "MacBook")};
-        Warehouse<Computer> warehouse = new Warehouse(myComputers);
+        Warehouse<Computer> warehouse = new Warehouse<>(myComputers);
 
         System.out.println(Arrays.toString(warehouse.getArray()));
         System.out.println(warehouse);
 
-        for (int i = 0; i < 5; ++i) {
-            System.out.println(warehouse.next());
+        for (int i = 0; i < 3; ++i) {
+            Computer comp = warehouse.next();
+            comp.start();
+            comp.restart();
+            comp.shutDown();
+
+            System.out.println(comp);
         }
     }
 }
