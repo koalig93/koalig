@@ -1,10 +1,10 @@
 package pingwit.hw_5.task_3;
 
-public class AppartmentHouse extends House {
+public class ApartmentHouse extends House {
 
     private static final int RENT_COEFF = 20;
 
-    public AppartmentHouse(Integer numFloors, Integer numTenants) {
+    public ApartmentHouse(Integer numFloors, Integer numTenants) {
         super(numFloors, numTenants);
     }
 
@@ -15,6 +15,6 @@ public class AppartmentHouse extends House {
 
     @Override
     public String toString() {
-        return "AppartmentHouse{" + super.toString() +"}";
+        return "ApartmentHouse{" + super.toString() +"}";
     }
 }
