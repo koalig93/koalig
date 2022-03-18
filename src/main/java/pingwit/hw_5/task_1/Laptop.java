@@ -1,5 +1,6 @@
 package pingwit.hw_5.task_1;
 
+// +
 public class Laptop implements Computer {
 
     private final String id;
