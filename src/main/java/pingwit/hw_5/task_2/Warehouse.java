@@ -2,6 +2,7 @@ package pingwit.hw_5.task_2;
 
 import java.util.Arrays;
 
+// +
 public class Warehouse<T> {
 
     private final T[] catalog;
