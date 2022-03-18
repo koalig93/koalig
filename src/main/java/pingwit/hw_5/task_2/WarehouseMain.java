@@ -13,14 +13,10 @@ import pingwit.hw_5.task_1.Laptop;
 public class WarehouseMain {
 
     public static void main(String[] args) {
-        /*
         Computer[] myComputers = {
                 new Laptop(UUID.randomUUID().toString(), "MSI"),
                 new Laptop(UUID.randomUUID().toString(), "MacBook")
                 };
-        */
-        Computer[] myComputers = {new Laptop(UUID.randomUUID().toString(), "MSI"),
-                new Laptop(UUID.randomUUID().toString(), "MacBook")};
         Warehouse<Computer> warehouse = new Warehouse<>(myComputers);
 
         System.out.println(Arrays.toString(warehouse.getArray()));

@@ -4,7 +4,8 @@ import pingwit.hw_5.task_2.Warehouse;
 
 public class HouseMain {
     public static void main(String[] args) {
-        House[] houses = {new CountryHouse(3, 10), // new CountryHouse(3, 10), на новой строке
+        House[] houses = {
+                new CountryHouse(3, 10), // new CountryHouse(3, 10), на новой строке
                 new CountryHouse(2, 6),
                 new ApartmentHouse(4, 48),
                 new ApartmentHouse(5, 90)

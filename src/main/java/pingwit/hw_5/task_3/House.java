@@ -4,13 +4,11 @@ public abstract class House {
 
     private final Integer numFloors;
     private final Integer numTenants;
-    private Boolean isWarmingOn;
-    // private Boolean isWarmingOn = false; такой вариант безопаснее, т.к. можно забыть сделать инит в другом конструкторе
+    private Boolean isWarmingOn = false; // такой вариант безопаснее, т.к. можно забыть сделать инит в другом конструкторе
 
     public House(Integer numFloors, Integer numTenants) {
         this.numFloors = numFloors;
         this.numTenants = numTenants;
-        this.isWarmingOn = false;
     }
 
     public void turnWarmingOn() {
