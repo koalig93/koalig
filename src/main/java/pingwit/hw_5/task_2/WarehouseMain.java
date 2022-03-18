@@ -5,6 +5,11 @@ import java.util.UUID;
 import pingwit.hw_5.task_1.Computer;
 import pingwit.hw_5.task_1.Laptop;
 
+// задача выполнена, дальше просто FYI
+/*
+Если внутри класса Laptop будет mutable поле например String -> StringBuilder), то получив его через геттер можно изменить вэлью, 
+в общем аккуратно надо с такими штуками
+*/
 public class WarehouseMain {
 
     public static void main(String[] args) {
