@@ -14,7 +14,7 @@ public class Warehouse<T> {
     }
 
     public T next() {
-        pos = (pos + 1) % catalog.length;
+        pos = (pos + 1) % catalog.length; // это гениально, первый раз вижу такое решение
         return catalog[pos];
     }
 
