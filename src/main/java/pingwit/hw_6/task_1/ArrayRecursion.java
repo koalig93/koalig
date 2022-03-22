@@ -1,5 +1,6 @@
 package pingwit.hw_6.task_1;
 
+//+
 public class ArrayRecursion {
     public static void main(String[] args) {
         int[] array = {25, 10, 5, 12, 33};
