@@ -1,5 +1,6 @@
 package pingwit.hw_6.task_2;
 
+// +
 public class Transmission {
 
     private static final int MAX_GEAR = 7;
