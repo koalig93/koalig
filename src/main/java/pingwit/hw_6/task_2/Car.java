@@ -8,7 +8,7 @@ abstract class Car {
     private Transmission transmission = new Transmission();
     private boolean accelerate = false;
 
-    private final String model;
+    private final String model; // final поля идут выше обычных
 
     public Car(String model) {
         this.model = model;
