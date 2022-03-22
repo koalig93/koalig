@@ -1,5 +1,6 @@
 package pingwit.hw_6.task_3.garden;
 
+// +
 public class Tree extends FruitBranch {
 
     public Tree(FruitType fruitType) {
