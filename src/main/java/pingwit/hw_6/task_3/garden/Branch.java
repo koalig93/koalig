@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
 
+// +
 public abstract class Branch {
 
     private static final int FRUITS_LIMIT_TO_GENERATE = 20;
