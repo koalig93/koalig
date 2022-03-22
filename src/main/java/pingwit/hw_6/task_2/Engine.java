@@ -2,7 +2,7 @@ package pingwit.hw_6.task_2;
 
 public class Engine {
 
-    private boolean state = false;
+    private boolean state = false; // по умолчанию будет false, но указать явно не будет ошибкой
 
     public boolean isStarted() {
         return state;
