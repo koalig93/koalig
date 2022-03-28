@@ -15,7 +15,7 @@ public class RecursiveFibonacci {
 
     // Intuitive recursion but very-very bad exponential complexity
     // Сложность алгоритма сопоставима со значением числа Фибоначчи, т.к. рекурсия позволяет легко записать формулу для сложности
-    // Time(n) = Time(n - 1) + Time(n - 2) + const, Time(0) = Time(1) = const - ни что иное, как последовательность Фибоначчи,
+    // Time(n) = Time(n - 1) + Time(n - 2) + n const, Time(0) = Time(1) = const - ни что иное, как последовательность Фибоначчи,
     // таким образом, итоговая сложность O(2^n)
     private static int calculateFibonacciExponentially(int n) {
         if (n < 2) {
