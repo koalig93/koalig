@@ -1,6 +1,6 @@
 package pingwit.hw_8.task_4;
 
-import pingwit.hw_8.task_4.Washing.WashingMachineManager;
+import pingwit.hw_8.task_4.Washing.WashingMachineManager; // Washing - название пакета с маленькой буквы
 
 public class WashingMachineMain {
     public static void main(String[] args) {

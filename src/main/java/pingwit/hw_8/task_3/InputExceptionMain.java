@@ -24,7 +24,7 @@ public class InputExceptionMain {
 
         } catch (InputException e) {
             System.out.println(e.getMessage());
-            generateArray();
+            generateArray(); // строить бизнес логику через исключение не приветствуется на практике, я бы предложил сделать бесконечный цикл с выходом по break или флагу
         }
     }
 
@@ -43,7 +43,7 @@ public class InputExceptionMain {
     }
 }
 
-class InputException extends Exception {
+class InputException extends Exception { // ну ты в курсе что в отдельном классе все это должно быть
     InputException(String message) {
         super(message);
     }

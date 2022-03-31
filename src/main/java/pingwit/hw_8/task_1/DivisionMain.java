@@ -1,5 +1,6 @@
 package pingwit.hw_8.task_1;
 
+// +
 public class DivisionMain {
     public static void main(String[] args) {
         double x = 15.5;

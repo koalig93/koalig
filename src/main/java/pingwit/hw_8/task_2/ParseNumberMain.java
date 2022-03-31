@@ -15,7 +15,7 @@ public class ParseNumberMain {
             return Integer.parseInt(stringNumber);
         } catch (NumberFormatException e) {
             System.out.println("Wrong integer number format: " + e.getMessage());
-            return 0;
+            return 0; // интересный выбор
         }
     }
 }

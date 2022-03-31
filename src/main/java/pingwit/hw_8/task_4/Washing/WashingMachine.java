@@ -4,7 +4,7 @@ public class WashingMachine {
     boolean power = false;
     boolean running = false;
 
-    WashingMachine() {
+    WashingMachine() { // я думаю этот конструктор можно убрать
     }
 
     public void turnOnThePower() {
@@ -38,6 +38,14 @@ public class WashingMachine {
         }
     }
 
+    /* я не увидел где вызывает метож drainWater.
+     Думаю его стоит сделать приватный и вызывать в блоке try-finally во время работы машинки. А т.к. свет пропадает внезапно, то понадобиться что-то вроде
+     Random random = new Random();
+     random.nextBoolean();
+        
+     таким образом получится автономная программа со случайным выключением света. Можно конечно добавить метод выключение эл-ва и в многопоточке его вызвать, но мы до этого еще не дошли
+   */
+    
     public void drainWater() {
         System.out.println("Water is drained");
     }
