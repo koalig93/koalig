@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.util.Arrays;
 import pingwit.hw_9.task_2.WriteMultipleTextToFileMain;
 
+// +
 public class ReadMultipleTextFromFileMain {
 
     public static void main(String[] args) {
