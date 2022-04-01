@@ -8,7 +8,7 @@ public class Employee implements Serializable {
 
     private String name;
     private Integer age;
-    public Work work;
+    public Work work; // public -> private, не должно быть у класса public полей
 
     public Employee(String name, Integer age, Work work) {
         this.name = name;
