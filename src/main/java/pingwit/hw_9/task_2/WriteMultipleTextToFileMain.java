@@ -9,7 +9,7 @@ public class WriteMultipleTextToFileMain {
 
     public static void main(String[] args) {
         String text = "Hello Alex! Have a nice day!\n";
-        final int numIterations = 1000;
+        final int numIterations = 1000; // final здесь не ошибка, но необходимости в нем нету. 
 
         try (FileWriter fw = new FileWriter(OUTPUT_FILE)) {
             for (int i = 0; i < numIterations; ++i) {
