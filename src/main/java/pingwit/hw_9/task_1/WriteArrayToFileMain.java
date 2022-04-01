@@ -11,7 +11,7 @@ public class WriteArrayToFileMain {
             fw.write(Arrays.toString(array));
 
             fw.flush();
-        } catch (IOException ignored) {
+        } catch (IOException ignored) { // блок catch лучше не оставлять пустым. В приложениях важно знать что за ошибка и откуда она взялась
         }
     }
 }
