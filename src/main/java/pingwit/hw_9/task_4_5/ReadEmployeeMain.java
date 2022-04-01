@@ -12,7 +12,7 @@ public class ReadEmployeeMain {
             Employee alex = (Employee) ois.readObject();
             System.out.println(alex);
 
-        } catch (IOException | ClassNotFoundException e) {
+        } catch (IOException | ClassNotFoundException e) { // я бы заменил на catch (Exception e) или сделал два блока catch
             e.printStackTrace();
         }
     }
