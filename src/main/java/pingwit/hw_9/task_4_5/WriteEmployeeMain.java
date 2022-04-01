@@ -6,7 +6,7 @@ import java.io.ObjectOutputStream;
 
 public class WriteEmployeeMain {
 
-    public static final String FILE = "src/main/java/pingwit/hw_9/task_4_5/employee.txt";
+    public static final String FILE = "src/main/java/pingwit/hw_9/task_4_5/employee.txt"; // public -> private
 
     public static void main(String[] args) {
         Work work = new Work("developer", 8);
