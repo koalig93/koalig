@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
+// еще можно было запомнить с какого байта началась запись твоей фразы в файл и затем начать читать с этого момента
 public class ReadSecretMessageMain {
     public static void main(String[] args) {
         try (FileReader fis = new FileReader(Path.IMAGE.toString());
